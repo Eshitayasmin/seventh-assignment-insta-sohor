@@ -16,8 +16,7 @@ const isLiked = (id) => {
 };
 
 const addToLiked = (id) => {
-    // likedPostsId.plus(id);
-    // get an error and fix i
+    // get an error and fix it
     likedPostsId.push(id)
     showPosts(posts);
 };
@@ -31,7 +30,7 @@ const reportPost = (id) => {
 const displayContent = (text) => {
   //give an error and fix it
   return text.length < 30 ? text : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
-    // return text.length < 30 ? 'text' : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
+    
 };
 
 const switchTab = (id) => {
@@ -172,10 +171,7 @@ const displayReportedPosts = () => {
       const div = createPost(post);
       document.getElementById( "reported" ).appendChild(div);
   });
-    // posts.forEach((post) => {
-    //     const div = createPost(post);
-    //     document.getElementById( "reported" ).appendChild(div);
-    // });
+    
 };
 
 const loadPosts = async () =>{
