@@ -93,8 +93,29 @@
               </div>
           </div>
 
-          <div>
+          <div class="mt-5 p-4 border">
               <h3>Question: What does event loop do?</h3>
+              <h4>Answer:</h4>
+              <p>javascript has a run time modal based on event loop. It is a combination of synchronous and asynchronous events. Synchronous events are performed one at a time and only when one is completed. The call stack is a mechanism that helps the JavaScript interpreter to keep track of the functions. When we call a function its pushed to the top of the call stack. But when fuction returns its removed from call stack. Call Stack is based on the Last In First Out (LIFO) principle. It means That function called at the end will pop out first. But when the function contains an asynchronous event(setTimeOut, setInterval, fetch, async e.t.c) it will show after all synchronus event, that's called call back queue. </p>
+
+              <div class="image">
+                <img class="img-fluid w-75" src="image/event-loop.png" alt="" srcset="">
+            </div>
+          </div>
+         
+
+          <div class="mt-5 mb-4 p-4 border">
+              <h3>Question: Difference between local storage and session storage</h3>
+              <h4>Answer:</h4>
+              <p>Local storage and Session storage are almost the same. They are both store name value pair data for a particular domain. Major difference is.. </p>
+          
+             <p>1. Local storage store data parmanetly but Session storage stored temporarily.</p>
+             <p>2. Local storage have 5-10MB storage space but session storage have 5MB storage space.</p>
+             <p>3. Local storage data has to be deleted manually but if close the browser session storage data automatically clears. </p>
+             <p>4. Local storage works for any tab but session storage works for specific tab.</p>
+
+             
+              
           </div>
            
         </section> 
